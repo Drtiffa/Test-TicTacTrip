@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="popin.css">
+    <title>Trainline.com</title>
+</head>
+
+<body>
+
+
+    <!--NAVBAR-->
+
+    <nav class="navbar">
+        <a href="">
+            <div class="top-logo"></div>
+        </a>
+        <div class="header-btn">
+            <a href="https://www.trainline.eu/signup">
+                <button class="btn btn-sm btn-color" type="button">crée un compte</button>
+            </a>
+            <button class="btn btn-sm btn-color" type="button" data-toggle="modal" data-target="#popin-connection">se connecter</button>
+            <button class="btn btn-sm bg-transparent" type="button" data-toggle="modal" data-target="#popin-aide">aide</button>
+            <button class="btn btn-sm bg-transparent border border-img" type="button" data-toggle="modal" data-target="#popin-langue">
+                <img class="" src="./img/flag.svg" alt="">
+            </button>
+            <button class="btn btn-sm bg-transparent border border-eur" type="button" data-toggle="modal" data-target="#popin-eur">eur</button>
+        </div>
+    </nav>
+
+    <!--POPIN se connecter-->
+    <div class="modal fade pop-pad-connect" id="popin-connection" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="popin">
+                <div class="title-block2">
+                    <h5 class="title-block2">
+                        <img src="./img/connection.png" alt=""> Se connecter</h5>
+                </div>
+                <div class="text-block2">
+                    <input type="email" class="form-control popin-input" aria-describedby="emailHelp" placeholder="Adresse email">
+                    <input type="password" class="form-control popin-input" placeholder="Mot de passe">
+                    <a href="" class="popin-p">
+                        <p>Mot de passe oublié ?</p>
+                    </a>
+                    <div class="popin-button">
+                        <button type="button" class="btn btn-annul">ANNULER</button>
+
+                        <button type="button" class="btn btn-connection float-right">SE CONNECTER</button>
+                    </div>
+                    <hr class="hr-popin">
+                    <div class="popin-button">
+                        <button type="button" class="btn btn-minu btn-fb">
+                            <img src="./img/facebook2.png" alt="">Avec Facebook</button>
+                        <button type="button" class="btn btn-minu btn-google float-right">
+                            <img src="./img/google.png" alt="">Avec Google</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--POPIN aide-->
+    <div class="modal fade pop-pad-aide" id="popin-aide" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog float-right" role="document">
+            <div class="modal-content popin-aide col-md-6">
+                <a class="aide-title1" href="https://aide.trainline.fr/?_ga=2.259120650.1211689606.1532334141-156310570.1531926382">
+                    <img src="https://assets.trainline.eu/assets/images/help-website-9bfdb676e74f021a8c2b9c797eb8e45a.svg" alt="">
+                    <span class="espace"></span> CONSULTER NOTRE SITE D'AIDE</a>
+
+                <hr class="hr-aide">
+
+                <h2 class="aide-title2">Pages suggérées</h2>
+
+                <div class="aide-text">
+                    <a href="https://aide.trainline.fr/article/93-greve-train-supprime-remboursement?_ga=2.224623386.1211689606.1532334141-156310570.1531926382">
+                        <img src="https://assets.trainline.eu/assets/images/help-bullet-00b00900c7694b189a4934ed70faf351.svg" alt="">
+                        <span class="espace"></span>
+                        <span class="gras">Grève SNCF</span> 2018 : que faire ?</a>
+                    <a href="https://aide.trainline.fr/article/584-tgvmax?_ga=2.224623386.1211689606.1532334141-156310570.1531926382">
+                        <img src="https://assets.trainline.eu/assets/images/help-bullet-00b00900c7694b189a4934ed70faf351.svg" alt="">
+                        <span class="espace"></span>Billet TGVmax</a>
+                    <a href="https://aide.trainline.fr/article/11-cartes-de-reduction-ou-de-fidelite?_ga=2.199800366.1211689606.1532334141-156310570.1531926382">
+                        <img src="https://assets.trainline.eu/assets/images/help-bullet-00b00900c7694b189a4934ed70faf351.svg" alt="">
+                        <span class="espace"></span>Ajouter mes
+                        <span class="gras">cartes de réduction</span> ou de
+                        <span class="gras">fidélité</span>
+                    </a>
+                    <a href="https://aide.trainline.fr/article/19-les-billets-sont-ils-au-meme-prix-sncf?_ga=2.199800366.1211689606.1532334141-156310570.1531926382">
+                        <img src="https://assets.trainline.eu/assets/images/help-bullet-00b00900c7694b189a4934ed70faf351.svg" alt="">
+                        <span class="espace"></span>Les billets sont-ils
+                        <span class="gras">au même prix</span> chez vous qu’à la SNCF ?</a>
+                    <a href="https://aide.trainline.fr/article/18-interet-service">
+                        <img src="https://assets.trainline.eu/assets/images/help-bullet-00b00900c7694b189a4934ed70faf351.svg" alt="">
+                        <span class="espace"></span>Si les prix sont les mêmes, quel est l’
+                        <span class="gras">intérêt</span> d’acheter mes billets chez vous ?</a>
+                    <a href="https://aide.trainline.fr/article/288-ajouter-passager?_ga=2.24358074.1211689606.1532334141-156310570.1531926382">
+                        <img src="https://assets.trainline.eu/assets/images/help-bullet-00b00900c7694b189a4934ed70faf351.svg" alt="">
+                        <span class="espace"></span>Ajouter un
+                        <span class="gras">passager</span>
+                    </a>
+                    <a href="https://aide.trainline.fr/article/14-recherche-sans-resultats-aucun-trajet-a-cet-horaire?_ga=2.24358074.1211689606.1532334141-156310570.1531926382">
+                        <img src="https://assets.trainline.eu/assets/images/help-bullet-00b00900c7694b189a4934ed70faf351.svg" alt="">
+                        <span class="espace"></span>Ma
+                        <span class="gras">recherche</span> ne fonctionne pas, à l’aide !</a>
+                    <a href="https://aide.trainline.fr/article/511-ouverture-des-ventes?_ga=2.24358074.1211689606.1532334141-156310570.1531926382">
+                        <img src="https://assets.trainline.eu/assets/images/help-bullet-00b00900c7694b189a4934ed70faf351.svg" alt="">
+                        <span class="espace"></span>Mon trajet est-il
+                        <span class="gras">ouvert à la vente</span> ?</a>
+                    <a href="https://aide.trainline.fr/article/57-code-avantage-sncf?_ga=2.24358074.1211689606.1532334141-156310570.1531926382">
+                        <img src="https://assets.trainline.eu/assets/images/help-bullet-00b00900c7694b189a4934ed70faf351.svg" alt="">
+                        <span class="espace"></span>Utiliser un
+                        <span class="gras">code avantage</span> SNCF
+                    </a>
+                </div>
+
+                <a class="aide-billet" href="https://aide.trainline.fr/category/4-recherche-de-billet?_ga=2.203658768.1211689606.1532334141-156310570.1531926382">
+                    <img src="https://assets.trainline.eu/assets/images/help-category-a56c658637ddb84521d857dbceb1004b.svg" alt="">
+                    <span class="espace"></span>Voir la catégorie
+                    <span class="gras">Recherche de billet</span> − 10 articles d’aide</a>
+
+            </div>
+        </div>
+    </div>
+    <!--POPIN langue-->
+    <div class="modal fade pop-pad-langue" id="popin-langue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog float-right" role="document">
+            <div class="modal-content col-md-6 popin-langue">
+                <h2 class="aide-title2">Sélectionnez votre pays</h2>
+                <div class="langue-blc">
+                    <div class="langue-text grid langue-pad">
+                        <p class="langue-title">Europe</p>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/cz-962ba594e62faa5aa4bd42a344b8e456.svg"
+                                alt="">
+                            <p class="img-pad">Česko</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/dk-0913004cefca1a9d295107811070a36c.svg"
+                                alt="">
+                            <p class="img-pad">Danmark</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/de-ade3348dc05a6b2c09ffa1d7d056a5b3.svg"
+                                alt="">
+                            <p class="img-pad">Deutschland</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/es-27e60b188d650c3bbfb6bf3a25d450f6.svg"
+                                alt="">
+                            <p class="img-pad">España</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/fr-3f3d5b0b269d11f3a65fe5109e0ac701.svg"
+                                alt="">
+                            <p class="img-pad">France</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/it-2dab503c61983f70ccaedfecb8a92f4c.svg"
+                                alt="">
+                            <p class="img-pad">Italia</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/nl-b05a14f78f81912c5d1ab3c17ef49022.svg"
+                                alt="">
+                            <p class="img-pad">Nederland</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/no-84611259a3d06e1625fb8d18ee4b5c29.svg"
+                                alt="">
+                            <p class="img-pad">Norge</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/at-7ef67e396c1db77028f1e54762c14ef5.svg"
+                                alt="">
+                            <p class="img-pad">Österreich</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/pl-74633d6bdd622c18388c54f038fd78f6.svg"
+                                alt="">
+                            <p class="img-pad">Polska</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/pt-e80c8fa23f13c76d3436322932aceb30.svg"
+                                alt="">
+                            <p class="img-pad">Portugal</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/ch-cf4622bd712fb7249bd9b1e393566d14.svg"
+                                alt="">
+                            <p class="img-pad">Schweiz</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/ch-cf4622bd712fb7249bd9b1e393566d14.svg"
+                                alt="">
+                            <p class="img-pad">Sverige</p>
+                        </a>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/gb-a5425dc0fb6c2c8fd919d07e4ea727f5.svg"
+                                alt="">
+                            <p class="img-pad">United Kingdom</p>
+                        </a>
+                    </div>
+                    <div class="langue-text">
+                        <p class="langue-title">Asie - Pacifique</p>
+                        <a class="inline langue-pad" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/cn-6a893b41b0fc22e152a42f1a38ea6c48.svg"
+                                alt="">
+                            <p class="img-pad">中国</p>
+                        </a>
+
+                        <p class="langue-title">Amérique</p>
+                        <a class="inline" href="">
+                            <img class="border border-img" src="https://assets.trainline.eu/assets/images/country-flags/br-387bbb708c2e3a895772f3931b646f94.svg"
+                                alt="">
+                            <p class="img-pad">Brasil</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--POPIN eur-->
+    <div class="modal fade pop-pad-langue" id="popin-eur" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog float-right" role="document">
+            <div class="modal-content col-md-9 popin-eur">
+                <div class="langue-blc">
+                    <div class="langue-text col-md-5">
+                        <p class="langue-title">Europe</p>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">CZK</span> Couronnes tchèques (Kč)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">DKK</span> Couronnes danoises (kr)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">EUR</span> Euro (€)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">GBP</span> Livres sterling (£)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">NOK</span> Couronnes norvégienne (kr)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">PLN</span> Zlotys polonais (zł)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">RUB</span> Roubles russes (₽)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">SEK</span> Couronnes suédoises (kr)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">CHF</span> Francs suisses</p>
+                        </a>
+                    </div>
+
+                    <div class="langue-text col-md-5">
+                        <p class="langue-title">Asie - Pacifique</p>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">AUD</span> Dollars australiens ($)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">JPY</span> Yens japonais (¥)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">CNY</span> Yuans chinois (¥)</p>
+                        </a>
+
+
+                    </div>
+
+                    <div class="langue-text col-md-5">
+                        <p class="langue-title">Amérique</p>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">ARS</span> Pesos argentins ($)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">BRL</span> Reais brésiliens (R$)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">CAD</span> Dollars canadiens ($)</p>
+                        </a>
+                        <a class="inline" href="">
+                            <p>
+                                <span class="border border-eur2">USD</span> Dollars américains ($)</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--HEADER-->
+
+    <header>
+        <div class="text-top">
+            <h1>Réservez vos billets de train et de bus.
+                <br> En France et en Europe.</h1>
+            <p>Voyagez avec Trainline, leader indépendant de la vente de billets de train et de bus en Europe.</p>
+        </div>
+
+        <div class="block flex">
+            <div class="block-1 col-md-6">
+                <h5 class="title-block1">Quel est votre trajet ?</h5>
+
+                <div class="blc-1">
+                    <div class="col-auto blc-pad" id="depart">
+                        <label class="sr-only" for="inlineFormInputGroup">Saisissez votre gare de départ...</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="./img/exit.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Saisissez votre gare de départ...">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep" id="arrive">
+                        <label class="sr-only" for="inlineFormInputGroup">Saisissez votre gare de d'arrivée...</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="./img/enter.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Saisissez votre gare de d'arrivée...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blc-2">
+                    <div class="col-auto blc-pad" id="aller">
+                        <label class="sr-only" for="inlineFormInputGroup">Aller</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="./img/aller.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Aller">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep" id="retour">
+                        <label class="sr-only" for="inlineFormInputGroup">Retour</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="./img/retour.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Retour">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto blc-pad" id="persons">
+                    <label class="sr-only" for="inlineFormInputGroup">1 Adulte (26-59)</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <img src="./img/person.svg" alt="">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="1 Adulte (26-59)">
+                        <div class="input-group-text">
+                            <img src="./img/plus.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blc-pad blc-pad3">
+                    <a class="left color-v" href="">Utiliser un code de réduction</a>
+                    <button class="btn btn-sm btn-color btn-search right" type="button">rechercher</button>
+                </div>
+
+            </div>
+
+            <div class="block-2 col-md-6" id="base">
+                <div class="title-block2">
+                    <h5 class="title-block2">Les petits plus de Trainline</h5>
+                </div>
+                <div class="text-block2">
+                    <div class="inline">
+                        <img class="img-logo" src="./img/billet.png" alt="">
+                        <p class="text-blc">
+                            <span class="title1">Vos billets au meilleur prix</span>
+                            <br>Acheter vos billets aux prix fixés par les transporteurs, sans frais supplémentaires.</p>
+                    </div>
+                    <div class="inline">
+                        <img class="img-logo" src="./img/carte.png" alt="">
+                        <p class="text-blc">
+                            <span class="title1">Cartes de réduction</span>
+                            <br>Elles sont toutes acceptées, comme vos cartes de fidélité.</p>
+                    </div>
+                    <div class="inline">
+                        <img class="img-logo" src="./img/payment.png" alt="">
+                        <p class="text-blc">
+                            <span class="title1">Payez en toute sécurité</span>
+                            <br>CB, Amex, PayPal, Chèques-Vacances ANCV : c’est vous qui voyez.</p>
+                    </div>
+                    <hr class="hr-blc">
+                    <div class="blc-pad blc-pad2">
+                        <img src="./img/sncf.svg" alt="">
+                        <img src="./img/ouigo.svg" alt="">
+                        <img src="./img/thalys.svg" alt="">
+                        <img src="./img/eurostar.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-2 col-md-6" id="depart_blc" style="display:none;">
+                <div class="">
+                    <h1 class="title-hea">Choisissez une gare de départ</h1>
+                </div>
+                <div class="text-dep">
+
+                    <div class="col-12 blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Paris</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Paris">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">London (Londres)</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="London (Londres)">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Lyon</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Lyon">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Lille</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Lille">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Bordeaux</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Bordeaux">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Strasbourg</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Strasbourg">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Marseille St-Charles</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Marseille St-Charles">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-via">
+                    <img src="https://assets.trainline.eu/assets/images/add-via-ff2137e0ba72cb639915b58caca6f280.svg" alt=""> Via
+                </button>
+
+
+            </div>
+
+            <div class="block-2 col-md-6" id="arrive_blc" style="display:none;">
+                <div class="">
+                    <h1 class="title-hea">Choisissez une gare d'arrivée</h1>
+                </div>
+                <div class="text-dep">
+
+                    <div class="col-12 blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Paris</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Paris">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">London (Londres)</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="London (Londres)">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Lyon</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Lyon">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Lille</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Lille">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Bordeaux</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Bordeaux">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Strasbourg</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Strasbourg">
+                        </div>
+                    </div>
+
+                    <div class="col-auto blc-pad pad-dep">
+                        <label class="sr-only" for="inlineFormInputGroup">Marseille St-Charles</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Marseille St-Charles">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-via">
+                    <img src="https://assets.trainline.eu/assets/images/add-via-ff2137e0ba72cb639915b58caca6f280.svg" alt=""> Via
+                </button>
+
+
+            </div>
+
+            <div class="block-2 col-md-6" id="aller_blc" style="display:none;">
+                <div class="">
+                    <h1 class="title-hea">Choisissez la date du départ</h1>
+                </div>
+                <div class="calendar-wrapper">
+                    <button id="btnPrev" type="button">
+                        <</button>
+                            <button id="btnNext" type="button">></button>
+                            <div id="divCal2"></div>
+                </div>
+
+            </div>
+
+            <div class="block-2 col-md-6" id="retour_blc" style="display:none;">
+                <div class="">
+                    <h1 class="title-hea">Choisissez la date de retour</h1>
+                </div>
+                <div class="calendar-wrapper">
+                    <button id="btnPrev" type="button">
+                        <</button>
+                            <button id="btnNext" type="button">></button>
+                            <div id="divCal"></div>
+                </div>
+
+            </div>
+
+            <div class="block-2 col-md-6" id="persons_blc" style="display:none;">
+                <div>
+                    <h1 class="title-hea">Choisissez vos passagers</h1>
+                </div>
+
+                <div class="blc-pad">
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle bg-transparent btn-ad" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Adulte (26 - 59)
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Jeune (0 - 25)</a>
+                            <a class="dropdown-item" href="#">Adulte (26 - 59)</a>
+                            <a class="dropdown-item" href="#">Sénior (60 +)</a>
+                        </div>
+                    </div>
+
+                    <button class="btn bg-transparent btn-co" type="button" data-toggle="modal" data-target="#popin-abonnement">Cartes et abonnements</button>
+                </div>
+
+                <div class="blc-pad">
+                    <button class="btn btn-add">
+                        <img class="img-pad2" src="https://assets.trainline.eu/assets/images/add-passenger-mint-bbc15516e9c9617861585d1b3c2cb55f.svg"
+                            alt="">Ajoutez un autre passager</button>
+                </div>
+
+                <h3 class="title-pas blc-pad">Retrouver vos passagers sauvegardés ?</h3>
+
+                <p class="blc-pad">Connectez-vous à votre compte pour accéder aux passagers enregistrés lors de vos précédentes recherches.</p>
+
+                <div class="blc-pad">
+                    <button class="btn btn-conne bg-transparent">
+                        <img class="img-pad2" src="https://assets.trainline.eu/assets/images/sign-in-color-5d80bf40ab2a0cba0a9359a787bf8c8b.svg"
+                            alt="">se connecter</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <!--TRANSITION-->
+
+    <div class="transition col-md-8">
+        <h3 class="text-trans">Ils nous font confiance. Nous vendons leurs billets.</h3>
+        <div class="trans-logos">
+            <img class="trans-logo-c" src="./img/sncf.svg" alt="">
+            <img class="trans-logo" src="./img/ouigo.svg" alt="">
+            <img class="trans-logo" src="./img/ouibus.svg" alt="">
+            <img class="trans-logo" src="./img/thalys.svg" alt="">
+            <img class="trans-logo" src="./img/eurostar.png" alt="">
+            <img class="trans-logo" src="./img/lyria.svg" alt="">
+            <img class="trans-logo" src="./img/db.svg" alt="">
+            <img class="trans-logo" src="./img/trenitalia.svg" alt="">
+            <img class="trans-logo" src="./img/thello.svg" alt="">
+            <img class="trans-logo" src="./img/italo.svg" alt="">
+            <img class="trans-logo" src="./img/renfe.svg" alt="">
+            <img class="trans-logo" src="./img/sncb.svg" alt="">
+            <img class="trans-logo" src="./img/ns.svg" alt="">
+            <img class="trans-logo" src="./img/cff.svg" alt="">
+        </div>
+
+        <div class="text-trans2">
+            <h2 class="title-trans">Tous les billets. Un seul guichet.</h2>
+            <h3 class="text-trans">Nous vendons tous les billets que vous avez l’habitude d’acheter en France et tous ceux dont vous pourriez avoir
+                besoin à l’étranger.</h3>
+        </div>
+    </div>
+
+
+    <!--BLOCK CARRE-->
+
+    <div class="blc-carre">
+        <div class="flex">
+            <div class="col-md-6 img-one"></div>
+            <div class="col-md-6 blc-text">
+                <h2 class="title-trans">C’est simple et c’est tout.</h2>
+                <h3 class="text-trans">Consultez les horaires des trains et le prix des billets dans une interface claire. Nous comparons les prix
+                    de plusieurs transporteurs, pour que vous n’ayez pas à le faire.</h3>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="col-md-6 blc-text">
+                <h2 class="title-trans">La très grande vitesse. Dès l’achat du billet.</h2>
+                <h3 class="text-trans">Trouvez et payez vos billets sur notre site en moins de temps qu’il n’en faut pour perdre patience sur un
+                    site ordinaire. Soit à peu près 58 secondes.</h3>
+            </div>
+            <div class="col-md-6 img-two"></div>
+        </div>
+
+        <div class="flex">
+            <div class="col-md-6 img-tree"></div>
+            <div class="col-md-6 blc-text">
+                <h2 class="title-trans">Sans pub et sans reproche.</h2>
+                <h3 class="text-trans">En choisissant de ne vendre que des billets, nous avons dû laisser certaines choses de côté, comme les publicités,
+                    les messages et les erreurs incompréhensibles.</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!--COMMENT CA MARCHE-->
+
+    <div class="blc-how">
+        <h2 class="how-title">Comment ça marche ?</h2>
+
+        <div class="flex how-pad">
+
+            <div class="col-md-6">
+                <h3 class="how-title2">Paiement</h3>
+                <div class="flex justify-content-center how-pad align">
+                    <img src="./img/cards.svg" alt="">
+                    <p class="how-p">ou</p>
+                    <img class="how-pay" src="./img/paypal.svg" alt="">
+                </div>
+                <p class="how-end justify-content-center">Nous soignons et sécurisons vos achats comme s’ils n’avaient pas de prix.</p>
+            </div>
+            <div class="ligne_verticale"></div>
+            <div class="col-md-6">
+                <h3 class="how-title2">Billets</h3>
+                <div class="flex justify-content-center how-pad align">
+                    <img src="./img/tickets.svg" alt="">
+                    <p class="how-p">ou</p>
+                    <img src="./img/pdf.svg" alt="">
+                </div>
+                <p class="how-end justify-content-center">Vous obtenez un billet cartonné à retirer en gare ou un e-billet à imprimer chez vous.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--ALLEZ BUS-->
+
+    <div class="go">
+        <h2 class="go-title">Allez-y (aussi) en bus</h2>
+        <p class="go-p">Nous vendons également des billets de bus pour que vous ayez le choix, sans l’embarras.</p>
+        <img src="./img/bus.svg" alt="">
+    </div>
+
+
+    <!--COMMENTAIRES-->
+
+    <div class="comment">
+        <div class="comment-text">
+            <h2 class="comment-title">Demandez conseil à nos utilisateurs.</h2>
+            <h3 class="comment-sous-title">Tout le marketing du monde ne remplacera jamais ce que nos utilisateurs disent de nous.
+                <br> C’est encore eux qui parlent le mieux de notre service.</h3>
+        </div>
+
+        <div class="flex row  justify-content-center">
+            <div class="col-md-4">
+                <blockquote class="twitter-tweet" data-cards="hidden" data-lang="fr">
+                    <p lang="fr" dir="ltr">Quand
+                        <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a> crédite mes chèques vacances en 24h
+                        <a href="https://t.co/OgeEmzcImc">pic.twitter.com/OgeEmzcImc</a>
+                    </p>&mdash; Agathe Dubuquoy (@Agath3)
+                    <a href="https://twitter.com/Agath3/status/1011623423750103040?ref_src=twsrc%5Etfw">26 juin 2018</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="twitter-tweet" data-lang="fr">
+                    <p lang="fr" dir="ltr">S&#39;il y a bien une boite qui te fais gagner du temps c&#39;est quand même
+                        <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a> !</p>&mdash; Charly (@ccreati_es)
+                    <a href="https://twitter.com/ccreati_es/status/1004708830138261504?ref_src=twsrc%5Etfw">7 juin 2018</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="twitter-tweet" data-conversation="none" data-lang="fr">
+                    <p lang="fr" dir="ltr">Super le service client de
+                        <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a>, notamment Soline. On a réussi à avoir un train pour demain :) Merci beaucoup !</p>&mdash;
+                    André Confiado (@andreconfiado)
+                    <a href="https://twitter.com/andreconfiado/status/997107923787526144?ref_src=twsrc%5Etfw">17 mai 2018</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <!--button plus d'amour-->
+            <p>
+                <a href="#tweet" title="Plus d'amour..." id="button" onclick="plus_d_amour()">Plus d'amour...</a>
+            </p>
+
+            <div id="tweet" class="row">
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-cards="hidden" data-lang="fr">
+                        <p lang="fr" dir="ltr">Weekend en risque avec les trains annulés, mais
+                            <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a> ne perd jamais son sang-froid et ça mérite un coup de chapeau
+                            <a href="https://t.co/nbWMtENs1C">pic.twitter.com/nbWMtENs1C</a>
+                        </p>&mdash; Nicolas Bougeard 😬 (@nbougeard)
+                        <a href="https://twitter.com/nbougeard/status/1002639348733497344?ref_src=twsrc%5Etfw">1 juin 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="fr">
+                        <p lang="fr" dir="ltr">Merci
+                            <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a> pour le service à la clientèle au top (comme d&#39;habitude), même en temps
+                            de grève
+                            <a href="https://twitter.com/hashtag/remboursement?src=hash&amp;ref_src=twsrc%5Etfw">#remboursement</a>.</p>&mdash; Alexandre Dubreuil (@dubreuia)
+                        <a href="https://twitter.com/dubreuia/status/1002516296938991616?ref_src=twsrc%5Etfw">1 juin 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="fr">
+                        <p lang="fr" dir="ltr">Renouveler sa carte 12-27 en 3 clic c’est tellement le pied, merci
+                            <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a> !</p>&mdash; Pierre VDK (@pierrevdk)
+                        <a href="https://twitter.com/pierrevdk/status/999339776833617920?ref_src=twsrc%5Etfw">23 mai 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="fr">
+                        <p lang="fr" dir="ltr">Ah mais ça a réellement pris 2 clics pour renouveler ma carte jeune SNCF avec
+                            <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a>. C&#39;est tellement fou cette qualité de service !</p>&mdash; Guillaume /
+                        Twinsen (@WorldOfTwinsen)
+                        <a href="https://twitter.com/WorldOfTwinsen/status/999329265626812416?ref_src=twsrc%5Etfw">23 mai 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-cards="hidden" data-lang="fr">
+                        <p lang="en" dir="ltr">Wow, that’s a well done Apple Watch app
+                            <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a> ! Very useful!
+                            <a href="https://t.co/nwYsjDdmT8">pic.twitter.com/nwYsjDdmT8</a>
+                        </p>&mdash; Nico CARTRON (@cartron)
+                        <a href="https://twitter.com/cartron/status/997367938612170752?ref_src=twsrc%5Etfw">18 mai 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-conversation="none" data-lang="fr">
+                        <p lang="fr" dir="ltr">Super le service client de
+                            <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a>, notamment Soline. On a réussi à avoir un train pour demain :) Merci beaucoup
+                            !
+                        </p>&mdash; André Confiado (@andreconfiado)
+                        <a href="https://twitter.com/andreconfiado/status/997107923787526144?ref_src=twsrc%5Etfw">17 mai 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="fr">
+                        <p lang="fr" dir="ltr">👍
+                            <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a> pour le formulaire de remboursement pour cause de grève ou de perturbations
+                            <a href="https://t.co/ukMjLxyrXx">https://t.co/ukMjLxyrXx</a> Très pratique</p>&mdash; Stéphane Klein (@klein_stephane)
+                        <a href="https://twitter.com/klein_stephane/status/996368648741838848?ref_src=twsrc%5Etfw">15 mai 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-conversation="none" data-lang="fr">
+                        <p lang="fr" dir="ltr">Merci
+                            <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a> pour la réactivité à rembourser le billet concerné (moins de 10min après avoir
+                            complété le formulaire) !</p>&mdash; 🚀Fabien GRENET (@FabienGrenet)
+                        <a href="https://twitter.com/FabienGrenet/status/995913406631825408?ref_src=twsrc%5Etfw">14 mai 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="fr">
+                        <p lang="fr" dir="ltr">Merci
+                            <a href="https://twitter.com/trainline_fr?ref_src=twsrc%5Etfw">@trainline_fr</a> pour un service client toujours au top depuis vos débuts !</p>&mdash; Sanglier
+                        Man 🐗 (@SanglierMan)
+                        <a href="https://twitter.com/SanglierMan/status/994220800633966593?ref_src=twsrc%5Etfw">9 mai 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+
+            <div class="partenaires">
+                <img src="./img/france2.png" alt="">
+                <img src="./img/20min.png" alt="">
+                <img src="./img/canalplus.png" alt="">
+                <img src="./img/challenges.png" alt="">
+                <img src="./img/figaro.png" alt="">
+                <img src="./img/lci.png" alt="">
+                <img src="./img/lemonde.png" alt="">
+                <img src="./img/ouifm.png" alt="">
+                <img src="./img/parisien.png" alt="">
+                <img src="./img/techcrunch.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!--MONTEZ A BORD-->
+
+    <div class="montez">
+        <h2 class="go-title">Montez à bord !</h2>
+        <p class="go-p">Arrêtez de vous prendre la tête. Prenez le train.</p>
+        <a href="">
+            <button class="btn btn-color btn-montez" type="button">réserver un billet</button>
+        </a>
+    </div>
+
+
+    <!--FOOTER-->
+
+    <div class="footer-one flex row">
+
+        <div class="col-md-2">
+            <img class="footer1-logo1" src="https://assets.trainline.eu/assets/images/trainline-logo-cf635433ef235d4f4eb00da841ad174c.svg"
+                alt="">
+            <p class="footer1-text">
+                <a href="https://www.trainline.fr/contact?_ga=2.81783775.956237873.1531937422-1312015693.1531937422">Contacter Trainline</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://aide.trainline.fr/?_ga=2.111274828.956237873.1531937422-1312015693.1531937422">Site d'aide</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.trainline.fr/about/us?_ga=2.111274828.956237873.1531937422-1312015693.1531937422">Qui sommes nous ?</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://media.trainline.com/fr">Information</a> &
+                <a href="https://blog.trainline.fr/?_ga=2.111274828.956237873.1531937422-1312015693.1531937422">Blog</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.trainline.fr/business?_ga=2.119524161.956237873.1531937422-1312015693.1531937422">Pour les entreprises</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.trainline.fr/jobs?_ga=2.74376026.956237873.1531937422-1312015693.1531937422">Offres d'emploi</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.trainline.fr/terms?_ga=2.74376026.956237873.1531937422-1312015693.1531937422">CVG</a> &
+                <a href="https://www.trainline.fr/legal-information?_ga=2.74376026.956237873.1531937422-1312015693.1531937422">Informations légales</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.trainline.fr/privacy-policy?_ga=2.122072131.956237873.1531937422-1312015693.1531937422">Données personnelles</a> &
+                <a href="https://www.trainline.fr/cookies?_ga=2.122072131.956237873.1531937422-1312015693.1531937422">Cookies</a>
+            </p>
+        </div>
+
+        <div class="col-md-2 footer1-blc">
+            <p class="footer1-text">Chaque mois, plus de 16,5 millions de personnes visitent les sites ou applications Trainline.
+                <a href="https://www.thetrainline.com/fr/information/trainline-eu-app">Téléchargez l'app.</a>
+            </p>
+            <img class="footer1-logo2" src="./img/app_store.svg" alt="">
+            <img class="footer1-logo2" src="./img/google_play.svg" alt="">
+        </div>
+
+        <div class="col-md-2">
+            <h4 class="footer1-h4">
+                <a href="https://www.thetrainline.com/fr/destinations?_ga=2.74490970.956237873.1531937422-1312015693.1531937422">Destinations</a>
+            </h4>
+            <p class="line"></p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/destinations/trains-pour-paris?_ga=2.74490970.956237873.1531937422-1312015693.1531937422">Trains pour Paris</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/destinations/trains-pour-lyon?_ga=2.108130250.956237873.1531937422-1312015693.1531937422">Trains pour Lyon</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/destinations/trains-pour-nice?_ga=2.108130250.956237873.1531937422-1312015693.1531937422">Trains pour Nice</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/destinations/trains-pour-marseille?_ga=2.108130250.956237873.1531937422-1312015693.1531937422">Trains pour Marseille</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/destinations/trains-pour-bordeaux?_ga=2.108130250.956237873.1531937422-1312015693.1531937422">Trains pour Bordeaux</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/destinations/trains-pour-toulouse?_ga=2.108130250.956237873.1531937422-1312015693.1531937422">Trains pour Toulouse</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/destinations/trains-pour-montpellier?_ga=2.81783775.956237873.1531937422-1312015693.1531937422">Trains pour Montpellier</a>
+            </p>
+        </div>
+
+        <div class="col-md-2">
+            <h4 class="footer1-h4">
+                <a href="https://www.thetrainline.com/fr/horaires-train">Horaires</a>
+            </h4>
+            <p class="line"></p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/horaires-train/paris-a-marseille?_ga=2.116386766.956237873.1531937422-1312015693.1531937422">Paris - Marseille</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/horaires-train/marseille-a-paris?_ga=2.10471549.956237873.1531937422-1312015693.1531937422">Marseille - Paris</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/horaires-train/paris-a-lyon?_ga=2.10471549.956237873.1531937422-1312015693.1531937422">Paris - Lyon</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/horaires-train/paris-a-bordeaux?_ga=2.10471549.956237873.1531937422-1312015693.1531937422">Paris - Bordeaux</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/horaires-train/paris-a-toulouse?_ga=2.10471549.956237873.1531937422-1312015693.1531937422">Paris - Toulouse</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/horaires-train/paris-a-lille?_ga=2.87085008.956237873.1531937422-1312015693.1531937422">Paris - Lille</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/horaires-train/paris-a-londres?_ga=2.87085008.956237873.1531937422-1312015693.1531937422">Paris - Londres</a>
+            </p>
+        </div>
+
+        <div class="col-md-2">
+            <h4 class="footer1-h4">
+                <a href="https://www.thetrainline.com/fr/gares?_ga=2.108514122.956237873.1531937422-1312015693.1531937422">Gares</a>
+            </h4>
+            <p class="line"></p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/gares/paris-gare-du-nord?_ga=2.107921610.956237873.1531937422-1312015693.1531937422">Paris Gare du Nord</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/gares/paris-gare-de-lyon?_ga=2.107921610.956237873.1531937422-1312015693.1531937422">Paris Gare de Lyon</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/gares/paris-gare-montparnasse?_ga=2.108054474.956237873.1531937422-1312015693.1531937422">Paris Gare Montparnasse</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/gares/paris-gare-de-lest?_ga=2.108054474.956237873.1531937422-1312015693.1531937422">Paris Gare de l'Est</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/gares/lyon-part-dieu?_ga=2.108054474.956237873.1531937422-1312015693.1531937422">Lyon Part-Dieu</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/gares/paris-gare-st-lazare?_ga=2.116386766.956237873.1531937422-1312015693.1531937422">Paris Gare St-Lazare</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/gares/marseille-st-charles?_ga=2.116386766.956237873.1531937422-1312015693.1531937422">Marseille St-Charles</a>
+            </p>
+        </div>
+
+        <div class="col-md-2">
+            <h4 class="footer1-h4">
+                <a href="https://www.thetrainline.com/fr/information?_ga=2.54995939.956237873.1531937422-1312015693.1531937422">Voyager en train</a>
+            </h4>
+            <p class="line"></p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/compagnies-ferroviaires/sncf?_ga=2.54995939.956237873.1531937422-1312015693.1531937422">SNCF</a> &
+                <a href="https://www.thetrainline.com/fr/compagnies-ferroviaires/tgv?_ga=2.54995939.956237873.1531937422-1312015693.1531937422">TGV</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/compagnies-ferroviaires/ouigo?_ga=2.54995939.956237873.1531937422-1312015693.1531937422">OUIGO</a> &
+                <a href="https://www.thetrainline.com/fr/information/ouibus?_ga=2.14618495.956237873.1531937422-1312015693.1531937422">Ouibus</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/compagnies-ferroviaires/eurostar?_ga=2.14618495.956237873.1531937422-1312015693.1531937422">Eurostra</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/information/eurolines?_ga=2.14618495.956237873.1531937422-1312015693.1531937422">Eurolines</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/information/cartes-abonnements-de-train?_ga=2.14618495.956237873.1531937422-1312015693.1531937422">Cartes & abonnements SNCF</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/information/interrail?_ga=2.45019116.956237873.1531937422-1312015693.1531937422">Pass Interrail</a>
+            </p>
+            <p class="footer1-text">
+                <a href="https://www.thetrainline.com/fr/aeroports?_ga=2.45019116.956237873.1531937422-1312015693.1531937422">Trains pour les aéroports</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-two flex">
+        <div class="col-md-6 ">
+            <p class="footer2-text inline">Suivez-nous</p>
+            <a href="https://www.facebook.com/trainline.fr">
+                <img class="footer2-logo1" src="./img/facebook.svg" alt="">
+            </a>
+            <a href="https://twitter.com/i/flow/consent_flow">
+                <img src="./img/twitter.svg" alt="">
+            </a>
+
+        </div>
+        <div class="col-md-6 text-right">
+            <img class="footer2-logo2" src="./img/apple-pay.svg" alt="">
+            <img src="./img/paypal2.svg" alt="">
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="calendar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
